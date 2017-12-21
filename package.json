@@ -46,7 +46,8 @@
     "gulp-shell": "^0.6.3",
     "gulp-tslint": "^8.0.0",
     "tslint": "^5.2.0",
-    "typescript": "^2.3.2"
+    "typescript": "^2.3.2",
+    "@types/node": "^7.0.21"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.0",
