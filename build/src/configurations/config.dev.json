@@ -1,0 +1,16 @@
+{
+    "database": {
+        "connectionString": "mongodb://localhost:27017/enterprise"
+    },
+    "server": {
+        "port": 5000,
+        "jwtSecret": "secret",
+        "jwtExpiration": "1h",
+        "routePrefix": "/api",
+        "plugins": [
+            "logger",
+            "jwt-auth",
+            "swagger"
+        ]
+    }
+}

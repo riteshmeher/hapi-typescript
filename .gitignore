@@ -32,7 +32,10 @@ node_modules
 .vscode
 
 #Ignore build folder
-build
+#build
+
+#ignore map files
+*.map
 
 #Ignore typings
 typings
