@@ -77,4 +77,11 @@ export default class UserController {
 
         reply(user);
     }
+
+    public async getUsers(request: Hapi.Request, reply: Hapi.ReplyNoContinue) {
+        const id = request.auth.credentials.id;
+        let users: IUser[] = await this.database.userModel.find();
+
+        reply(users);
+    }
 }

@@ -74,6 +74,13 @@ class UserController {
             reply(user);
         });
     }
+    getUsers(request, reply) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const id = request.auth.credentials.id;
+            let users = yield this.database.userModel.find();
+            reply(users);
+        });
+    }
 }
 exports.default = UserController;
 //# sourceMappingURL=user-controller.js.map

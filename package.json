@@ -4,7 +4,7 @@
   "description": "",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/typescript-hapi/typescript-node.git"
+    "url": "https://github.com/riteshmeher/hapi-typescript.git"
   },
   "author": "Ritesh Meher",
   "keywords": [

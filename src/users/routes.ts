@@ -38,6 +38,31 @@ export default function (server: Hapi.Server, serverConfigs: IServerConfiguratio
     });
 
     server.route({
+        method: 'GET',
+        path: '/users/all',
+        config: {
+            handler: userController.getUsers,
+            auth: "jwt",
+            tags: ['api', 'users'],
+            description: 'Get user info.',
+            validate: {
+                headers: UserValidator.jwtValidator,
+            },
+            plugins: {
+                'hapi-swagger': {
+                    responses: {
+                        '200': {
+                            'description': 'User founded.'
+                        },
+                        '401': {
+                            'description': 'Please login.'
+                        }
+                    }
+                }
+            }
+        }
+    });
+    server.route({
         method: 'DELETE',
         path: '/users',
         config: {
