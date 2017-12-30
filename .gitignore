@@ -29,7 +29,7 @@ build/Release
 node_modules
 
 #VSCode
-.vscode
+# .vscode
 
 #Ignore build folder
 #build
